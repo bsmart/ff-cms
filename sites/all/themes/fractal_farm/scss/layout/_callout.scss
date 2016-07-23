@@ -1,0 +1,18 @@
+.callout {
+  text-align: center;
+  @extend .small-centered;
+  h4 {
+    font-size: 1rem;
+  }
+  &.co-dark {
+    h3, h4 {
+      color: $charcoal ;
+    }
+  }
+  &.co-light {
+    min-height: 450px;
+    h3, h4 {
+      color: $white;
+    }
+  }
+}

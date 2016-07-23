@@ -1,0 +1,99 @@
+// Elements
+//
+// Things to review before you write code here:
+// - Be sure to load after "foundation" import.
+// - Also, before adding styles be sure to modify variables in the
+//   "base/_common.scss" file. You may not need to write any code.
+
+// Default body styles
+body {
+  font-family: $body-font-family;
+}
+
+// Headings
+//------------------------------------------
+h1, h2, h3,
+h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: $header-font-family;
+  line-height: $header-line-height;
+  letter-spacing: 0.025em;
+}
+
+.headline {
+  color: $white;
+  font-size: 1em;
+}
+
+.tagline {
+  color: $white;
+}
+
+.blur {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.btn-ghost {
+  @include ghost-button($body-font-family, $paragraph-font-size/1.25, $white, .25rem, $white, 300ms, #000000);
+}
+
+button.secondary {
+  background: $blue !important;
+  color: $white !important;
+}
+
+.slick-arrow::before {
+  color: $blue;
+}
+
+// Anchors
+//-----------------------------------------------------------------------------
+// a {}
+
+// a:focus {}
+
+// a.active,
+// a:active,
+// a:hover {}
+
+// Form Input
+//-----------------------------------------------------------------------------
+// input[type="text"],
+// input[type="password"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="month"],
+// input[type="week"],
+// input[type="email"],
+// input[type="number"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="time"],
+// input[type="url"],
+// textarea {
+// }
+
+// input[type="text"],
+// input[type="password"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="month"],
+// input[type="week"],
+// input[type="email"],
+// input[type="number"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="time"],
+// input[type="url"],
+// textarea {
+
+// }
+
+// select {}

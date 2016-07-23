@@ -1,0 +1,45 @@
+// Non-modular or client styles for .l-footer region.
+// .full-width {
+//   max-width: 1400px;
+// }
+
+$text-color: #fff;
+
+// footer CSS
+
+.footer-wrap {
+    background-color: $blue;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  color: $text-color;
+  min-height: 160px;
+}
+
+.footer {
+  .social {
+    margin-bottom: 2rem;
+  }
+  h4 {
+    color: $text-color;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    font-weight: 400;
+  }
+  p, a {
+    font-weight: 300;
+    font-size: 1rem;
+    color: $text-color;
+  }
+}

@@ -1,0 +1,73 @@
+// Non-modular or client styles for .l-header region.
+
+header {
+
+  .btn-ghost {
+    @include ghost-button($body-font-family, $paragraph-font-size/1.25, $white, .25rem, $white, 300ms, #000000);
+  }
+
+  a img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 2rem;
+  }
+}
+
+.hero {
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  > div {
+    padding: 8rem 2rem;
+  }
+}
+
+.view-about-us, .view-quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+// Footer
+ul li {
+  list-style-type: none;
+}
+
+.item-list {
+  background: $blue;
+  color: $white;
+  padding: 0.5rem;
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.item-list ul li {
+  margin: 0;
+}
+
+.view-quote h3 {
+  font-size: 4rem;
+}
+
+.block-views-quote-block {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $oil;
+    opacity: .6;
+  }
+}
+
+.contact {
+  background: $gray;
+  padding-bottom: 4rem;
+}

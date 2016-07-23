@@ -1,0 +1,31 @@
+// Common abstract classes to extend or parametrics are stored here.
+
+// Example parametrics.
+// ------------------------------------------------------
+// %font-FONTNAME   {}
+// %font-sans-serif { font-family: sans-serif; }
+// %font-serif      { font-family: serif; }
+
+$blue: #0F2A46;
+$gray: #e7e7e7;
+
+%full-width {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+$font-family-sans-serif: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+
+$body-font-family: $font-family-sans-serif;
+
+$header-font-family: $body-font-family;
+
+$header-line-height: 1.2;
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  background: $white;
+  border: 1px solid $blue;
+  box-shadow: none;
+}

@@ -1,0 +1,20 @@
+// @file
+// Place your mixins here. Feel free to roll your own mixins.
+
+@mixin ghost-button($font, $font-size, $font-color, $border-size, $border-color, $transition-speed, $hover-color) {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: transparent;
+  font-family: $font;
+  font-size: $font-size;
+  color: $font-color;
+  border: $border-size solid $border-color;
+  -webkit-transition: color $transition-speed, background $transition-speed;
+  transition: color $transition-speed, background $transition-speed;
+
+  &:hover, &:focus {
+    background: $border-color;
+    color: $hover-color;
+  }
+}
