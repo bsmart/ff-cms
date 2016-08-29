@@ -1,5 +1,9 @@
 .menu-wrapper {
-  margin-top: 4rem;
+  padding-bottom: 2rem;
+  @media #{$medium-up} {
+    padding: 7rem 0;
+  }
+  overflow: hidden;
 }
 
 .menu-group {
@@ -9,7 +13,7 @@
     flex-direction: column;
     justify-content: space-between;
     .slick {
-          margin-bottom: 1rem;
+      margin-bottom: 1rem;
     }
   }
   .item-list {

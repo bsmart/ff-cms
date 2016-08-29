@@ -16,7 +16,7 @@
  */
 ?>
 
-<div class="webform-confirmation alert-box success radius" data-reveal data-alert class="alert-box success radius">
+<div id="alertModal" class="webform-confirmation alert-box success radius" data-reveal data-alert class="alert-box success radius">
     <?php print t('Thank you, we will contact you soon.'); ?>
-    <a href="#" class="close">&times;</a>
+    <a href="#" class="close close-reveal-modal">&times;</a>
 </div>

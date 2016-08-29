@@ -1,0 +1,7 @@
+.form-intro {
+  text-align: center;
+  padding-bottom: 3rem;
+  @media #{$medium-up} {
+    padding-bottom: 6rem;
+  }
+}

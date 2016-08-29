@@ -47,8 +47,29 @@ button.secondary {
   color: $white !important;
 }
 
-.slick-arrow::before {
-  color: $blue;
+.slick-arrow {
+  &:hover:before {
+    color: darken($gray, 5%);
+  }
+}
+.slick-arrow:before {
+  color: $gray;
+}
+
+.view-hero {
+  .tagline {
+    margin-bottom: 2rem;
+  }
+}
+
+.quote-wrap {
+  background: $gray;
+}
+
+.panel {}
+
+[class*="block-grid-"]>li {
+  padding: 0;
 }
 
 // Anchors

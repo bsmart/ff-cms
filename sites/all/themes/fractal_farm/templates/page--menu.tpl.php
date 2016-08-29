@@ -2,8 +2,8 @@
 <div role="document" class="page">
 
   <!--.l-header -->
-  <header role="banner" class="l-header">
-
+  <header role="banner" class="l-header hero-menu columns">
+    <div class="hero-menu__background" data-interchange="[<?php print base_path() . drupal_get_path('theme', 'fractal'); ?>/images/menu-bg-sm.jpg, (small)], [<?php print base_path() . drupal_get_path('theme', 'fractal'); ?>/images/menu-bg-sm-retina.jpg, (smallretina)], [<?php print base_path() . drupal_get_path('theme', 'fractal'); ?>/images/menu-bg-md.jpg, (medium)], [<?php print base_path() . drupal_get_path('theme', 'fractal'); ?>/images/menu-bg-md-retina.jpg, (mediumretina)], [<?php print base_path() . drupal_get_path('theme', 'fractal'); ?>/images/menu-bg-lrg.jpg, (large)], [<?php print base_path() . drupal_get_path('theme', 'fractal'); ?>/images/menu-bg-lrg-retina.jpg, (largeretina)]"></div>
     <?php if ($top_bar): ?>
       <!--.top-bar -->
       <?php if ($top_bar_classes): ?>
@@ -32,7 +32,7 @@
 
     <!-- Title, slogan and menu -->
     <?php if ($alt_header): ?>
-      <section class="row <?php print $alt_header_classes; ?>">
+      <section class="<?php print $alt_header_classes; ?>">
 
         <?php if ($site_name): ?>
           <?php if ($title): ?>
@@ -142,13 +142,6 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
 
-      <div class="contact">
-      <?php print views_embed_view('form_intro', 'block'); ?>
-        <?php
-            $block = module_invoke('webform', 'block_view', 'client-block-36');
-            print render($block['content']);
-        ?>
-      </div>
     </div>
     <!--/.l-main region -->
 

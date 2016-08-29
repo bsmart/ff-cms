@@ -1,7 +1,6 @@
 // Non-modular or client styles for .l-header region.
 
 header {
-
   .btn-ghost {
     @include ghost-button($body-font-family, $paragraph-font-size/1.25, $white, .25rem, $white, 300ms, #000000);
   }
@@ -19,16 +18,48 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  > div {
-    padding: 8rem 2rem;
+  position:relative;
+  &__background {
+    @extend %background;
   }
 }
 
-.view-about-us, .view-quote {
+.hero-menu {
+  &__background {
+    @extend %background;
+  }
+}
+
+.aboutus {
+  height: 550px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  position:relative;
+  @extend %full-width;
+  &__background {
+    @extend %background;
+  }
+  h3 {
+    font-size: 1.45rem;
+    @media #{$medium-up} { font-size: 2rem; }
+    @media #{$large-up} { font-size: 3rem; }
+  }
+  h4 {
+    font-size: 1rem;
+    @media #{$medium-up} { font-size: 1rem; }
+    @media #{$large-up} { font-size: 2rem; }
+  }
+  h3, h4 {
+    color: $white;
+  }
+}
+
+.quote {
+  &__background {
+    @extend %background;
+  }
 }
 
 // Footer
@@ -37,20 +68,31 @@ ul li {
 }
 
 .item-list {
-  background: $blue;
-  color: $white;
-  padding: 0.5rem;
   ul {
     margin-bottom: 0;
+    li {
+      padding: 0.6rem 1.3rem;
+      margin: 0;
+      background: $blue;
+      color: $white;
+      span {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      p {
+        margin: 0;
+        color: darken($white, 15%);
+      }
+      &.last {
+        background: darken($blue, 8%);
+      }
+    }
   }
 }
 
-.item-list ul li {
-  margin: 0;
-}
-
 .view-quote h3 {
-  font-size: 4rem;
+  font-size: 2rem;
+  @media #{$medium-up} { font-size: 4rem; }
 }
 
 .block-views-quote-block {
@@ -65,9 +107,4 @@ ul li {
     background-color: $oil;
     opacity: .6;
   }
-}
-
-.contact {
-  background: $gray;
-  padding-bottom: 4rem;
 }

@@ -71,6 +71,7 @@
     <?php if (!empty($page['header'])): ?>
       <!--.l-header-region -->
       <section class="l-header-region hero">
+        <div class="hero__background" data-interchange="[<?php print base_path() . path_to_theme(); ?>/images/hero-bg-sm.jpg, (small)], [<?php print base_path() . path_to_theme(); ?>/images/hero-bg-sm-retina.jpg, (smallretina)], [<?php print base_path() . path_to_theme(); ?>/images/hero-bg-md.jpg, (medium)], [<?php print base_path() . path_to_theme(); ?>/images/hero-bg-md-retina.jpg, (mediumretina)], [<?php print base_path() . path_to_theme(); ?>/images/hero-bg-lrg.jpg, (large)], [<?php print base_path() . path_to_theme(); ?>/images/hero-bg-lrg-retina.jpg, (largeretina)]"></div>
         <div class="small-12 medium-12 large-8 columns">
           <?php if ($linked_logo): print $linked_logo; endif; ?>
           <?php print render($page['header']); ?>
@@ -117,7 +118,7 @@
     <!-- .l-main region -->
     <div class="<?php print $main_grid; ?> main">
       <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlight panel callout">
+        <div class="highlight panel">
           <?php print render($page['highlighted']); ?>
         </div>
       <?php endif; ?>
@@ -141,18 +142,8 @@
         </ul>
       <?php endif; ?>
 
-      <?php print views_embed_view('callout_featured_items', 'block'); ?>
-      <?php print views_embed_view('featured_items', 'block_1'); ?>
-      <div class="quote">
-        <?php print views_embed_view('quote', 'block'); ?>
-      </div>
-      <div class="contact">
-      <?php print views_embed_view('form_intro', 'block'); ?>
-      <?php
-          $block = module_invoke('webform', 'block_view', 'client-block-36');
-          print render($block['content']);
-      ?>
-      </div>
+      <?php print render($page['content']); ?>
+
     </div>
     <!--/.l-main region -->
 

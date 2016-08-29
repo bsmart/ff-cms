@@ -1,18 +1,51 @@
 .callout {
   text-align: center;
+  margin: 6rem auto 4rem;
+
   @extend .small-centered;
+
   h4 {
     font-size: 1rem;
   }
+
   &.co-dark {
     h3, h4 {
-      color: $charcoal ;
+      color: $charcoal;
     }
   }
+
   &.co-light {
     min-height: 450px;
+
     h3, h4 {
       color: $white;
     }
   }
+}
+
+.quote {
+  @extend %full-width;
+  h3 {
+    font-size: 2rem;
+
+    @media #{$medium-up} {
+      font-size: 4rem;
+    }
+  }
+}
+
+.quote_text {
+  h3, h4 { color: $white; }
+}
+
+.featured-main, .contact-form, .quote {
+  padding: 8rem 0;
+}
+
+.contact-form-wrapper {
+  background: #eee;
+}
+
+.quote {
+  text-align: center;
 }

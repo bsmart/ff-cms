@@ -94,6 +94,12 @@ regions[footer]              = Footer
 ; Panel Layouts
 plugins[panels][layouts] = layouts
 
+; For Picture 1.x
+breakpoints[wide] = only screen and (min-width: 3456px)
+breakpoints[normal] = (min-width: 851px)
+breakpoints[narrow] = (min-width: 380px)
+breakpoints[mobile] = (min-width: 0px)
+
 ; Theme settings:
 
 ; Top Bar.
